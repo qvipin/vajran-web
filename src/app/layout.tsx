@@ -33,9 +33,18 @@ export const metadata: Metadata = {
     siteName: "VAJRAN",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "VAJRAN - We build what you dream.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og.png"],
   },
 };
 
