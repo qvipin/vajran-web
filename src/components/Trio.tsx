@@ -26,6 +26,9 @@ const team: TeamMember[] = [
     name: "Abhi",
     role: "Operations & Quality",
     email: "abhi@vajran.com",
+    socials: {
+      x: "https://x.com/appallaabhiram",
+    },
   },
   {
     name: "Shourya",

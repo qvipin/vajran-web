@@ -32,11 +32,10 @@ export const metadata: Metadata = {
     url: "https://vajran.com",
     siteName: "VAJRAN",
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "VAJRAN | Digital Atelier",
-    description: "Your idea is worthless until we build it. Raw code and intentional design.",
   },
 };
 
@@ -58,6 +57,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body

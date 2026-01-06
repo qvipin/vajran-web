@@ -32,8 +32,22 @@
   }
 
   html {
+    background-color: hsl(var(--background));
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
+  }
+
+  /* iOS only: prevent content in status bar */
+  @supports (-webkit-touch-callout: none) {
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    main {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 
   body {

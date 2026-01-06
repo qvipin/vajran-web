@@ -15,8 +15,8 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="container-main">
+      <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md pt-[env(safe-area-inset-top,0px)]">
+        <div className="container-main">
         <nav className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5 group">
             <svg
@@ -63,7 +63,6 @@ export default function Header() {
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border hover:bg-muted transition-colors"
               aria-label="Toggle theme"
             >
-              {/* Sun icon - visible in dark mode (to switch to light) */}
               <svg
                 className="h-4 w-4 hidden dark:block"
                 fill="none"
@@ -74,7 +73,6 @@ export default function Header() {
                 <circle cx="12" cy="12" r="4" />
                 <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
               </svg>
-              {/* Moon icon - visible in light mode (to switch to dark) */}
               <svg
                 className="h-4 w-4 block dark:hidden"
                 fill="none"
